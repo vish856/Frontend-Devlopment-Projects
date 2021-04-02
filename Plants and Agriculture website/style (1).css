@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: #555;
+
+}
+p{
+
+    color: #555;
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+.c2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.c2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.c2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 15px 0;
+}
+.button{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.button:hover{
+    background: #563434;
+
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 70px;0
+
+}
+
+.c3{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+
+}.c3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto  ;
+    padding-left: 25px;
+    padding-right:25px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+h3{
+    color: #555;
+    font-weight: normal;
+}
+.c3 p{
+    font size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+
+}
+.c3:hover{
+    transform:translateY(-5px)
+}
+/*----offer---*/
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+
+}
+.c2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: #555;
+}
+
+/*blog*/
+.blog{
+    padding-top: 100px;
+}
+.blog .c3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.blog .c3:hover{
+    transform: translateY(-10px);
+
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+.c3 p{
+    font-size: 15px;
+    margin: 12px 0;
+    color: #777;
+}
+.blog .c3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+
+}
+
+/* footer*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 12px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-c1, .footer-c2, .footer-c3, .footer-c4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-c1{
+    flex-basis: 30%;
+}
+.footer-c2{
+    flex: 1;
+    text-align: center;
+}
+.footer-c2 img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+.footer-c3, .footer-c4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*-------media query for menu-----*/
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left:0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/*-------media query for less than 600 screen height-----*/
+
+@media only screen and (max-width:600px)
+{
+    .row{
+        text-align: center;
+    }
+    .c2, .c3, .c4{
+        flex-basis: 100%;
+    }
+}
